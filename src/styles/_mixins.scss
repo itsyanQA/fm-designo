@@ -1,0 +1,55 @@
+// Media Queries
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-only {
+  @media (max-width: 900px) and (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-down {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+// Typography
+@mixin h1 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 48px;
+  color: var(--black);
+}
+
+@mixin h2 {
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  color: var(--black);
+}
+
+@mixin h3 {
+  letter-spacing: 5px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--dark-gray);
+}
+
+@mixin body {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--dark-gray);
+}
